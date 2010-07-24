@@ -61,7 +61,9 @@ $icons = array(\'extensions-myextension-icon1\', \'extensions-myextension-icon2\
 t3lib_SpriteManager::addIconSprite($icons,t3lib_extMgm::siteRelPath(\'myextension\') . \'myextension_sprite.css\');							
 
 // myextension_sprite.css:
-.t3-icon-extensions-myextension {	background-image:url(../../typo3conf/ext/myextension/myextension_sprite.gif);	}
+.t3-icon-extensions-myextension {
+	background-image:url(../../typo3conf/ext/myextension/myextension_sprite.gif);
+}
 .t3-icon-extensions-myextension-icon1 {	background-position: 0px 0px; }
 .t3-icon-extensions-myextension-icon2 {	background-position: 0px -16px; }
 				';							
@@ -78,7 +80,7 @@ t3lib_SpriteManager::addIconSprite($icons,t3lib_extMgm::siteRelPath(\'myextensio
 				
 				$example = 'if(version_compare(TYPO3_version,\'4.4\',\'>\')) {
 $icons = array(
-\'myicon\' => t3lib_extMgm::extRelPath($_EXTKEY) . \'myicon.gif\',
+	\'myicon\' => t3lib_extMgm::extRelPath($_EXTKEY) . \'myicon.gif\',
 );
 t3lib_SpriteManager::addSingleIcons($icons, $_EXTKEY);
 }';
