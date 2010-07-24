@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for module &quot;tools_txspriteiconoverviewM1&quot;</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="title">Sprite Icon overview</label>
+			<label index="function1">Available Icons</label>
+			<label index="function1_example1">You can use any of these icons with:</label>
+			<label index="function1_example2">You add further icons from your own extension using:</label>
+			<label index="function2">Single Icons</label>
+			<label index="function2_example">You can add further icons from your own extension using:</label>
+			<label index="function3">Sprite Overlays</label>
+			<label index="function3_example">You can add any of those overlays to your icons using:</label>
+		</languageKey>
+	</data>
+</T3locallang>
