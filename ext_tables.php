@@ -4,8 +4,12 @@ if (!defined('TYPO3_MODE')) {
 }
 
 if (TYPO3_MODE == 'BE') {
-	t3lib_extMgm::addModulePath('tools_txspriteiconoverviewM1', t3lib_extMgm::extPath($_EXTKEY) . 'mod1/');
-		
-	t3lib_extMgm::addModule('tools', 'txspriteiconoverviewM1', '', t3lib_extMgm::extPath($_EXTKEY) . 'mod1/');
+
+	t3lib_extMgm::insertModuleFunction(
+		'tools_txextdevevalM1',
+		'tx_spriteiconoverview_extdeveval',
+		t3lib_extMgm::extPath($_EXTKEY).'class.tx_spriteiconoverview_extdeveval.php',
+		'Sprite icon overview'
+	);
 }
 ?>
